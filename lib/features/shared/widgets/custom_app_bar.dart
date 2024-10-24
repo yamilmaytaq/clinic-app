@@ -69,7 +69,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+            if (widget.title != null) const SizedBox(height: 10),
             if (widget.title != null)
               CustomTitleForScreen(title: widget.title ?? ''),
           ],
